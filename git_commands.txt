@@ -1,0 +1,10 @@
+git init -> initializes new repository
+git add filepath -> adds file to staging area (index)
+git rm filename -> removes file from working tree and index
+git rm filename --cached -> removes file from index, but leaves it in working tree (local)
+git status -> shows status
+git commit -m "commit messge" -> commits changes
+git commit --amend -m "new meassage" -> replaces last commit and its message
+git commit --amend -no-edit -> replaces last commit without message
+git log -2 -> shows last two commits
+
