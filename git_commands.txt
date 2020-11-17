@@ -3,7 +3,8 @@ git add filepath -> adds file to staging area (index)
 git rm filename -> removes file from working tree and index 
 git rm filename --cached -> removes file from index, but leaves it in working tree (local) 
 git status -> shows status 
-git commit -m "commit messge" -> commits changes 
+git commit -m "commit messge" -> commits changes
+git commit -a -m "commit message" -> adds files to staging area and commits changes (git add + git commit)
 git commit --amend -m "new meassage" -> chandes message of last commit without changing files
 git commit --amend --no-edit -> replaces last commit, but leaves message 
 git log -2 -> shows last two commits 
