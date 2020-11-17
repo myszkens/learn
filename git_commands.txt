@@ -11,5 +11,6 @@ git restore --staged filename ->removes file from staging, but leaves it loccaly
 git restore filename -> restores lastly commited file (when you want to discard changes to the file and restore last version of this file)
 git remote -v -> checks if you are connected to remote respository
 git remote add origin https://github.com/myszkens/FirstRepo.git
+git remote set-url origin git_ssh_adress -> sets new url, so you can connect via ssh instead of url
 git push origin -u master -> sends repository to remote server
 git clone adress -> downloads repository from remote server to local machine
