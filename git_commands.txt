@@ -7,15 +7,26 @@ git commit -m "commit messge" -> commits changes
 git commit -a -m "commit message" -> adds files to staging area and commits changes (git add + git commit)
 git commit --amend -m "new meassage" -> chandes message of last commit without changing files
 git commit --amend --no-edit -> replaces last commit, but leaves message 
-git log -2 -> shows last two commits 
+git log -2 -> shows last two commits of current branch
+git log --all -> shows history of commits on all branches
+git log branch_name -> shows history of commits on specified branch
 git restore --staged filename ->removes file from staging, but leaves it loccaly??? 
 git restore filename -> restores lastly commited file (when you want to discard changes to the file and restore last version of this file)
 git remote -v -> checks if you are connected to remote respository
 git remote add origin https://github.com/myszkens/FirstRepo.git
 git remote set-url origin git_ssh_adress -> sets new url, so you can connect via ssh instead of url
 git push origin -u master -> sends repository to remote server
+git push origin --delete branch_name -> deletes branch frmo remote repository
 git clone adress -> downloads repository from remote server to local machine
-git branch branch_name -< creates new branch
+git branch branch_name -< creates new branch, but dont get you to new branch
 git branch -> displays currently existing branches
-gir branch -r -> displayes list of remote branches
+git branch -r -> displayes list of remote branches
+git branch -a -> displayes branches and says wich are remote and which are local
+git branch -d branch_name -> deletes branch
+git checkout branch_name -> changes branch
+git checkout -b branch_name -> creates and gets you to new branch
+git checkout first_letters_of_commit_number -> gets you to secified commit
+git switch branch_name -> same as git branch branch_name, changes branch
+git switch -c new_branch -> creates and swiches to new branch
+git switch - -> swiches to lastly used branch   
 
