@@ -28,5 +28,5 @@ git checkout -b branch_name -> creates and gets you to new branch
 git checkout first_letters_of_commit_number -> gets you to secified commit
 git switch branch_name -> same as git branch branch_name, changes branch
 git switch -c new_branch -> creates and swiches to new branch
-git switch - -> swiches to lastly used branch   
-
+git switch - -> swiches to lastly used branch
+git pull origin branch_name -> pulls content of other branch to your current branch (from remote master in this case) 
