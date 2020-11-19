@@ -29,4 +29,7 @@ git checkout first_letters_of_commit_number -> gets you to secified commit
 git switch branch_name -> same as git branch branch_name, changes branch
 git switch -c new_branch -> creates and swiches to new branch
 git switch - -> swiches to lastly used branch
-git pull origin branch_name -> pulls content of other branch to your current branch (from remote master in this case) 
+git restore --source source_branch_name -- file_name -> restores file_name from another branch
+git fetch - > fetches information about changes in remote repostory
+git merge -> merges remote repo with local repo
+git pull origin branch_name -> (works as fetch + merge) pulls content of other branch to your current branch (from remote master in this case) 
