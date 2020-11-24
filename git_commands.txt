@@ -1,3 +1,5 @@
+If something was ever commited in git, it might be restored
+
 RULES:
 1. Always create branches from master branch
 2. Fore update and change hiostory only on your branches
@@ -47,5 +49,12 @@ git pull --rebase -> (git fetch + git rebase) feches changes from remote reposit
 git reset --soft -> moves branch and head pointer to previous state, but leaves files and staging area untouched
 git reset --mixed -> moves branch and head pointer to previous state, leaves files untouched but changes staging area. In order to return to previous state git add and git commit have to be done
 git reset -- hard ~1 -> resets filesystem to previous state (one state back in this case)
-git stash -> saves changes withous adding them to staging area and commiting
+git stash -> allowes to save changes without adding them to staging area and commiting
 git stash --apply -> applies changes saved in stash (for example changes from another branch are stahed and you can apply them on your current branch)
+git stash pop -> removes changes with index 0 from stash list
+git stash drop stash@{0} -> removes stash element with index 0
+git stash clear -> clears stash
+git stash -u -> saves changes made in untracked files
+git reflog -> record of all snaphosts and branch swiches (even those that where deleted)
+git branch branch_name first_letters_of_commit_number - creates new branch with restored commits
+git reset --hard HEAD@{2} -> restores deleted commits and files (HEAD@{2} comes from reflog and represents the state before commits/file removal)
