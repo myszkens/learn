@@ -44,5 +44,8 @@ git pull origin branch_name -> (works as fetch + merge) pulls content of other b
 git rebase -> rebases a branch which we want
 git rebase -i HEAD~3 -> interactive rebase, lets you modify last 3 commits (change messeges, squash and more)
 git pull --rebase -> (git fetch + git rebase) feches changes from remote repository prior to rebasing our code on top of it (it takes into account what happend on remote repository opposite to git rebase which takes into account only local repository)
+git reset --soft -> moves branch and head pointer to previous state, but leaves files and staging area untouched
+git reset --mixed -> moves branch and head pointer to previous state, leaves files untouched but changes staging area. In order to return to previous state git add and git commit have to be done
 git reset -- hard ~1 -> resets filesystem to previous state (one state back in this case)
-
+git stash -> saves changes withous adding them to staging area and commiting
+git stash --apply -> applies changes saved in stash (for example changes from another branch are stahed and you can apply them on your current branch)
